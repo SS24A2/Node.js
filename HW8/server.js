@@ -8,4 +8,4 @@ app.get("/analysis", getData)
 app.post("/analysis", postData)
 
 
-app.listen(8085, () => console.log("server started on 8085"))
+app.listen(8086, () => console.log("server started on 8086"))
