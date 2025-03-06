@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            align-items: start;
+        }
+
+        fieldset {
+            max-width: 600px;
+            margin: 10px 10px;
+            font-weight: 600;
+        }
+
+        input {
+            text-align: center;
+            margin: 3px 5px;
+        }
+
+        textarea {
+            width: 280px;
+            height: 100px;
+        }
+
+        button {
+            margin: 20px;
+            height: 30px;
+        }
+
+        p {
+            margin: 5px;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        h2,
+        nav {
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            margin: 15px 10px;
+            display: inline-block;
+        }
+
+        span {
+            font-size: 18px;
+            color: red;
+            display: inline-block;
+            transform: translateX(600px);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Lista na recepti</h2>
+        <nav>
+            <a href="/recepti">Pregledaj ja listata na recepti</a>
+            <a href="/form">Dodadi nov recept</a>
+        </nav>
+    </header>
+    <form action="/form" method="POST">
+        <fieldset>
+            <legend>Recipe Title</legend>
+            <input type="text" name="recipe" placeholder="title" required>
+        </fieldset>
+        <fieldset>
+            <legend>Ingredients</legend>
+            <p> Enter from 2-10 ingredients</p>
+            <div>
+                <input type="text" name="ingredient1" placeholder="ingredient1" required>
+                <input type="text" name="ingredient1Quantity" placeholder="ingredient1-quantity" required>
+            </div>
+            <div>
+                <input type="text" name="ingredient2" placeholder="ingredient2" required>
+                <input type="text" name="ingredient2Quantity" placeholder="ingredient2-quantity" required>
+            </div>
+            <div>
+                <input type="text" name="ingredient3" placeholder="ingredient3">
+                <input type="text" name="ingredient3Quantity" placeholder="ingredient3-quantity">
+            </div>
+            <div>
+                <input type="text" name="ingredient4" placeholder="ingredient4">
+                <input type="text" name="ingredient4Quantity" placeholder="ingredient4-quantity">
+            </div>
+            <div>
+                <input type="text" name="ingredient5" placeholder="ingredient5">
+                <input type="text" name="ingredient5Quantity" placeholder="ingredient5-quantity">
+            </div>
+            <div>
+                <input type="text" name="ingredient6" placeholder="ingredient6">
+                <input type="text" name="ingredient6Quantity" placeholder="ingredient6-quantity">
+            </div>
+            <div>
+                <input type="text" name="ingredient7" placeholder="ingredient7">
+                <input type="text" name="ingredient7Quantity" placeholder="ingredient7-quantity">
+            </div>
+            <div>
+                <input type="text" name="ingredient8" placeholder="ingredient8">
+                <input type="text" name="ingredient8Quantity" placeholder="ingredient8-quantity">
+            </div>
+            <div>
+                <input type="text" name="ingredient9" placeholder="ingredient9">
+                <input type="text" name="ingredient9Quantity" placeholder="ingredient9-quantity">
+            </div>
+            <div>
+                <input type="text" name="ingredient10" placeholder="ingredient10">
+                <input type="text" name="ingredient10Quantity" placeholder="ingredient10-quantity">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Recipe steps</legend>
+            <textarea name="step1" placeholder="step1" required></textarea>
+            <textarea name="step2" placeholder="step2"></textarea>
+            <textarea name="step3" placeholder="step3"></textarea>
+            <textarea name="step4" placeholder="step4"></textarea>
+            <textarea name="step5" placeholder="step5"></textarea>
+            <textarea name="step6" placeholder="step6"></textarea>
+            <textarea name="step7" placeholder="step7"></textarea>
+            <textarea name="step8" placeholder="step8"></textarea>
+            <textarea name="step9" placeholder="step9"></textarea>
+            <textarea name="step10" placeholder="step10"></textarea>
+        </fieldset>
+        <button type="submit">Save recipe</button>
+    </form>
+</body>
+
+</html>

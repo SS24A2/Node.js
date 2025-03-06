@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECEPTI</title>
+    <style>
+        p {
+            margin: 5px auto;
+        }
+
+        h2,
+        nav {
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            margin: 15px 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <%- include ("partial") %>
+        <table width="100%" border="1">
+            <tr>
+                <th>Title</th>
+                <th>Ingredients</th>
+                <th>Steps</th>
+                <th>Delete Recipe</th>
+            </tr>
+            <% data.forEach((recipe, index)=>{ %>
+                <tr>
+                    <td>
+                        <%=recipe.recipe%>
+                    </td>
+                    <td>
+                        <% Object.keys(recipe.ingredients).forEach((key)=>{ %>
+                            <p><%=`*${key}: ${recipe.ingredients[key]}`%></p>
+                            <% }) %>
+                    </td>
+                    <td>
+                        <% Object.keys(recipe.method).forEach((key, keyIndex)=>{ %>
+                            <p>
+                                <%=`${keyIndex+1}. ${recipe.method[key]}`%>
+                            </p>
+                            <% }) %>
+                    </td>
+                    <td><a href="/brishi?i=<%=recipe.id%>">Izbrishi</a></td>
+                </tr>
+                <% }) %>
+        </table>
+</body>
+
+</html>
