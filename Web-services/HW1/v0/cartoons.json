@@ -1,0 +1,47 @@
+[
+    {
+        "title": "SpongeBob SquarePants",
+        "showrunners": [
+            "Vincent Waller",
+            "Marc Ceccarelli"
+        ],
+        "directors": [
+            "Vincent Waller",
+            "Dave Cunningham",
+            "Stephen Hillenburg",
+            "Paul Tibbitt"
+        ],
+        "network": [
+            "Nickelodeon"
+        ],
+        "seasons": 15,
+        "releaseDate": "May 1, 1999",
+        "creator": "Stephen Hillenburg"
+    },
+    {
+        "title": "Pokémon",
+        "directors": [
+            "Kunihiko Yuyama",
+            "Daiki Tomiyasu",
+            "Jun Owada",
+            "Saori Den"
+        ],
+        "network": [
+            "TV Tokyo",
+            "TV Osaka",
+            "TV Aichi",
+            "TVh",
+            "TVQ",
+            "TSC"
+        ],
+        "seasons": 25,
+        "releaseDate": "1997 - 2022",
+        "creator": "Naoko Takeuchi",
+        "streamingServices": [
+            "Hulu",
+            "Netflix"
+        ],
+        "franchise": "Pokemon",
+        "rating": "TV-PG"
+    }
+]

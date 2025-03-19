@@ -1,0 +1,26 @@
+[
+    {
+        "name": "The Last Supper",
+        "artist": "Leonardo da Vinci",
+        "date": "1495 to 1498",
+        "location": "Santa Maria delle Grazie (Milan, Italy)"
+    },
+    {
+        "name": "The Scream",
+        "artist": "Edvard Munch",
+        "date": "1893",
+        "location": "National Museum (Oslo, Norway - opening in 2020) and Munch Museum (Oslo - through May 2020)"
+    },
+    {
+        "name": "Mona Lisa",
+        "artist": "Leonardo da Vinci",
+        "date": "1503 to 1519",
+        "location": "Louvre Museum (Paris)"
+    },
+    {
+        "name": "Guernica",
+        "artist": "Pablo Picasso",
+        "date": "1937",
+        "location": "Museo Reina Sofía (Madrid)"
+    }
+]

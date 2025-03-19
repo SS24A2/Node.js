@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Four Twenty Five",
+        "rating": "excellent",
+        "neighborhood": "Midtown",
+        "price": "very expensive",
+        "cuisine": "New American"
+    },
+    {
+        "name": "Borgo",
+        "rating": "very good",
+        "neighborhood": "Midtown South",
+        "price": "expensive",
+        "cuisine": "Italian"
+    },
+    {
+        "name": "Cafe Kestrel",
+        "rating": "very good",
+        "neighborhood": "Red Hook",
+        "price": "expensive",
+        "cuisine": "European"
+    },
+    {
+        "name": "Le Veau d'Or",
+        "rating": "very good",
+        "neighborhood": "Upper East Side",
+        "price": "very expensive",
+        "cuisine": "French"
+    }
+]

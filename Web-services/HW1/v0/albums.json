@@ -1,0 +1,68 @@
+[
+    {
+        "name": "Revolver",
+        "author": "The Beatles",
+        "releaseDate": "August 5, 1966",
+        "label": "Parlophone, Capitol Records",
+        "genre": "Pop Rock, Psychedelic Pop, Psychedelic Rock",
+        "producer": [
+            "George Martin"
+        ],
+        "writer": [
+            "John Lennon",
+            "Paul McCartney",
+            "George Harrison"
+        ]
+    },
+    {
+        "name": "Rumours",
+        "author": "Fleetwood Mac",
+        "releaseDate": "February 4, 1977",
+        "label": "Warner Bros.",
+        "genre": "Pop Rock, Soft Rock, Folk Pop",
+        "producer": [
+            "Fleetwood Mac",
+            "Ken Caillat",
+            "Richard Dashut"
+        ],
+        "writer": [
+            "Christine McVie",
+            "Lindsey Buckingham",
+            "Stevie Nicks",
+            "John McVie",
+            "Mick Fleetwood"
+        ]
+    },
+    {
+        "name": "Highway 61 Revisited",
+        "author": "Bob Dylan",
+        "releaseDate": "August 30, 1965",
+        "label": "Columbia",
+        "genre": "Folk Rock, Contemporary Folk, Blues Rock",
+        "producer": [
+            "Bob Johnston",
+            "Tom Wilson"
+        ],
+        "writer": [
+            "Bob Dylan"
+        ]
+    },
+    {
+        "name": "Abbey Road",
+        "author": "The Beatles",
+        "releaseDate": "September 26, 1969",
+        "label": "Apple",
+        "genre": "Pop Rock, Progressive Pop, Psychedelic Pop, Art Pop",
+        "producer": [
+            "George Martin",
+            "Chris Thomas",
+            "Glyn Johns"
+        ],
+        "writer": [
+            "John Lennon",
+            "Paul McCartney",
+            "George Harrison",
+            "Richard Starkey"
+        ]
+    }
+]
