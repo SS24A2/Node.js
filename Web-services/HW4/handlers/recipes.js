@@ -15,8 +15,8 @@ const createRecipe = async (req, res) => {
   try {
     await validateInput({ recipe: req.body }, createRecipeInputCheck)
     const data = {...req.body, userId:req.auth.id}
-    await create(data);
-    return res.status(201).send("Recipe created successfully!");
+    const result = await create(data);
+    return res.status(201).send(result);
   } catch (err) {
     return res.status(err.code || 500).send(err.message || "Internal Server Error!");
   }
@@ -48,9 +48,9 @@ const updateRecipe = async (req, res) => {
       return res.status(400).send("Recipe not found!");
     }
     
-    if (recipe.userId == req.auth.id){
-      await update(req.params.id, updateData);
-      return res.status(200).send("Recipe updated successfully!");
+    if (recipe.userId.toString() === req.auth.id.toString()){
+      const result = await update(req.params.id, updateData);
+      return res.status(200).send(result);
     } else {
       return res.status(400).send("No authorisation!");
     }
@@ -68,9 +68,9 @@ const deleteRecipe = async (req, res) => {
       return res.status(400).send("Recipe not found!");
     }
 
-    if (recipe.userId == req.auth.id){
-      await remove(req.params.id);
-      return res.status(200).send("Recipe removed successfully!");
+    if (recipe.userId.toString() === req.auth.id.toString()){
+      const result = await remove(req.params.id);
+      return res.status(200).send(result);
     } else {
       return res.status(400).send("No authorisation!");
     }

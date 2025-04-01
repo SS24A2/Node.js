@@ -21,6 +21,7 @@ const recipeSchema = new mongoose.Schema({
     immutable: true,
     type: mongoose.SchemaTypes.ObjectId,
     ref: "Account",
+    required: true
   }
 })
 
