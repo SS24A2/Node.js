@@ -14,7 +14,6 @@ const getRecipes = async (req, res) => {
 const createRecipe = async (req, res) => {
   try {
     await validateInput({ recipe: req.body }, createRecipeInputCheck)
-    console.log(req.auth)
     const data = {...req.body, userId:req.auth.id}
     await create(data);
     return res.status(201).send("Recipe created successfully!");
